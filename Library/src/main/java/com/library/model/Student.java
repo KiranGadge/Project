@@ -1,11 +1,12 @@
 package com.library.model;
 
 public class Student {
+
 	private int studid;
 	private String studname;
-
 	public Student() {
-		
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	public Student(int studid, String studname) {
 		super();
@@ -26,8 +27,8 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student has--> studid=" + studid + ", studname=" + studname;
+		return "Student [studid=" + studid + ", studname=" + studname + "]";
 	}
-
-
+	
+	
 }

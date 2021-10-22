@@ -8,30 +8,30 @@
 <title></title>
 </head>
 <body>
-<h1>Library Management </h1>
-<h3><a href='index.jsp'>Add Book</a></h3>
-	<table border=1>
+<h1 align="center">Welcome</h1>
+<h2 align="center"><i>Library Management</i> </h2>
+<h3 align="center"><a href='index'>Add Book</a></h3>
+	<table border=1 align="center">
 		<tr>
 			<th>Book Id</th>
 			<th>Book Name</th>
 			<th>Author</th>
+			<th>Actions</th>
 		</tr>
-		<c:forEach var="bobj" items="${listBook}">
+		<c:forEach var="bobj" items="${booklist}">
 			<tr>
-				<td>${bobj.getbookid()}</td>
-				<td>${bobj.getbookname()}</td>
-				<td>${bobj.getauthor()}</td>
-				
-				<td>
-				<a href="edit/${bobj.getbookid()}">Edit</a>
+				<td>${bobj.getBookid()}</td>
+				<td>${bobj.getBookname()}</td>
+				<td>${bobj.getAuthor()}</td>	
+				<td>			
+				<a href="edit/${bobj.getBookid()}">Edit</a>
 					&nbsp;&nbsp;&nbsp;&nbsp; 
-				<a href="delete/${bobj.getbookid()}">Delete</a>
+				<a href="delete/${bobj.getBookid()}">Delete</a></td>
 				</td>
 			</tr>
 		</c:forEach>
 		
 
 	</table>
-
 </body>
 </html>

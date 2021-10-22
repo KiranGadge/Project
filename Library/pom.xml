@@ -22,6 +22,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+<dependency>
+    <groupId>jstl</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+		
 		<dependency>
 
 			<groupId>junit</groupId>
@@ -32,6 +39,13 @@
 
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-jasper</artifactId>
+    <version>9.0.52</version>
+</dependency>
+		
 
 		<dependency>
 
@@ -43,17 +57,8 @@
 
 		</dependency>
 
-		<dependency>
 
-			<groupId>org.springframework.boot</groupId>
-
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-
-		</dependency>
-
-
-
-		<dependency>
+		<!-- <dependency>
 
 			<groupId>mysql</groupId>
 
@@ -62,7 +67,7 @@
 			<version>8.0.26</version>
 
 		</dependency>
-		<dependency>
+ -->		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
